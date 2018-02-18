@@ -13,7 +13,7 @@ object UserLocation {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("UserLocation").setMaster("local[2]")
     val sc = new SparkContext(conf)
-    // bs_log每个文件的数据格式：(手机号_基站id)
+    // 数据格式：(手机号_基站id)
     val mobileAndVisitLocationAndTime = sc.textFile("E:\\develop\\spark\\bs_log")
       .map(line => {
         val fields = line.split(",")
