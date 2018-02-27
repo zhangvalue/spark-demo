@@ -2,7 +2,6 @@ package com.kongbig.demo8_streaming
 
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.Logging
-import org.apache.spark.streaming.util.FileBasedWriteAheadLog.LogInfo
 
 /**
   * Describe: 
